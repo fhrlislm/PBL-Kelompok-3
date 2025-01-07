@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tombol Back -->
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/arrow_back_24" />
+
+    <!-- Detail Artikel -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <!-- Judul Artikel -->
+        <TextView
+            android:id="@+id/tvJudulArtikel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nelayan PPU Hati-Hati! Gelombang Tinggi mengancam hingga 22 September, BPBD Imbau Tidak Melaut di tanggal Ini"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/inter_semibold"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Info Penulis dan Tanggal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_account"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNamaPenulis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kompas News"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/inter_medium" />
+
+                <TextView
+                    android:id="@+id/tvTanggalPublikasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sel, 13 Juli 2024"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_deep"
+                    android:fontFamily="@font/inter_regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Gambar Artikel -->
+        <ImageView
+            android:id="@+id/imgArtikel"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nelayan"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Isi Artikel -->
+        <TextView
+            android:id="@+id/tvIsiArtikel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..."
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/inter_regular" />
+    </LinearLayout>
+
+</LinearLayout>

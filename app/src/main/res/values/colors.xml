@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_deep">#143652</color>
+    <color name="light_blue">#E4EDF4</color>
+    <color name="onboarding_blue">#008BAA</color>
+    <color name="card_background">#F1F3F6</color>
+    <color name="gray">#BABABD</color>
+    <color name="gray_deep">#767676</color>
+    <color name="safe">#D9F2DE</color>
+    <color name="warn">#F2EED9</color>
+    <color name="danger">#F2D9D9</color>
+</resources>

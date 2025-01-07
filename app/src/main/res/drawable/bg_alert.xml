@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="15dp" />
+            <solid android:color="#FFFFFF" /> <!-- Warna default -->
+        </shape>
+    </item>
+    <item android:id="@+id/background_color">
+        <shape android:shape="rectangle">
+            <corners android:radius="15dp" />
+            <solid android:color="#FFFFFF" /> <!-- Warna akan diubah secara dinamis -->
+        </shape>
+    </item>
+</layer-list>

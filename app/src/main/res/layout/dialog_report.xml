@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/report_card"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtReportIssue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/btnClose"
+            android:text="Laporkan Masalah"
+            android:textColor="@color/blue_deep"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter_medium" />
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/close"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edtProblemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bg_et_profile"
+        android:fontFamily="@font/inter_regular"
+        android:hint="Tulis masalah yang Anda alami"
+        android:inputType="textMultiLine"
+        android:lines="2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Masukkan Foto"
+        android:textColor="@color/blue_deep"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_medium" />
+
+    <ImageView
+        android:id="@+id/ivTakenPhoto"
+        android:background="@drawable/bg_et_profile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center"
+        android:src="@drawable/add_photo_24" />
+
+    <Button
+        android:id="@+id/btnSubmitReport"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="12dp"
+        android:text="Submit" />
+</LinearLayout>

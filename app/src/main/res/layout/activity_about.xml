@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Header dengan Back Button dan Title -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="1dp"
+        android:paddingEnd="16dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_centerInParent="true"
+            android:text="Tentang Aplikasi"
+            android:textColor="#143652"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <!-- Logo Aplikasi -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="176dp"
+        android:layout_height="176dp"
+        android:src="@drawable/weatherwave"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Deskripsi Aplikasi -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WeatherWave adalah aplikasi yang dirancang untuk meningkatkan keselamatan dan efisiensi para nelayan di Indonesia. Aplikasi ini tidak hanya menyediakan informasi cuaca laut yang akurat secara real-time, tetapi juga dilengkapi dengan fitur pelaporan darurat dan pelacakan nelayan.\n\nMelalui WeatherWave, nelayan dapat dengan mudah melaporkan situasi darurat seperti kerusakan kapal atau keadaan terjebak di tengah laut saat cuaca buruk.\n\nDibuat oleh Kelompok 3\n\n- Fahrul Islam\n- Asrini Muhsin\n- Hermawan Mardin\n- Maylha Erisa Pasyha"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="16sp"
+        android:textColor="#656565"
+        android:layout_below="@id/logo"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Versi Aplikasi (nempel di bawah) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Versi 1.0"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="14sp"
+        android:textColor="#bababd"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"/>
+</RelativeLayout>

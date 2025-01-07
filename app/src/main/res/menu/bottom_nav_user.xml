@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_24"
+        android:title="Beranda" />
+
+    <item
+        android:id="@+id/maps"
+        android:icon="@drawable/map_24"
+        android:title="Peta" />
+
+    <item
+        android:id="@+id/fab"
+        android:title=""
+        android:enabled="false"/>
+
+    <!-- News Menu -->
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/info_24"
+        android:title="Info" />
+
+    <!-- Profile Menu -->
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/account_circle_24"
+        android:title="Profil" />
+</menu>

@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.WeatherWave" parent="Theme.Material3.Light.NoActionBar">
+        <item name="materialButtonStyle">@style/MyMaterialButton</item>
+    </style>
+
+    <style name="MyMaterialButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/blue_deep</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.WeatherWave" parent="Base.Theme.WeatherWave" />
+</resources>

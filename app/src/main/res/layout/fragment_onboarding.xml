@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal">
+
+    <!-- Card Container -->
+    <RelativeLayout
+        android:id="@+id/cardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="424dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/onboarding_card"
+        android:elevation="4dp"
+        android:clipToPadding="true">
+
+        <!-- Illustration -->
+        <ImageView
+            android:id="@+id/imgIllustration"
+            android:layout_width="305dp"
+            android:layout_height="305dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/onboarding1" />
+    </RelativeLayout>
+
+    <!-- Welcome and Description -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/blue_deep"
+            android:textSize="26sp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:fontFamily="@font/inter_regular"
+            android:text=""
+            android:textColor="@color/blue_deep"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- Navigation Buttons -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <!-- LinearLayout for Skip and Next -->
+        <LinearLayout
+            android:id="@+id/layoutSkipNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/btnSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="Lewati"
+                android:textColor="#2F9BC9"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginRight="140dp" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Lanjut"
+                android:textSize="16sp"
+                android:background="@drawable/bg_continue"/>
+        </LinearLayout>
+
+        <!-- Button Start -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="88dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Mulai Sekarang!"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:background="@drawable/bg_continue"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

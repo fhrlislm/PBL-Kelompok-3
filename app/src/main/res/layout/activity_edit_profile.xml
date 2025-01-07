@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header dengan Back Button dan Title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="1dp"
+        android:paddingEnd="16dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_centerInParent="true"
+            android:text="Edit Profil"
+            android:textColor="#143652"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <!-- Nama -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_regular"
+        android:text="Nama"
+        android:textColor="@color/blue_deep"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="12dp"/>
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_et_profile"/>
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_regular"
+        android:text="Email"
+        android:textColor="@color/blue_deep"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"/>
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_et_profile"
+        android:inputType="textEmailAddress" />
+
+    <!-- Password -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_regular"
+        android:text="Password"
+        android:textColor="@color/blue_deep"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"/>
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_et_profile"
+        android:inputType="textPassword" />
+
+    <!-- No Telepon -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_regular"
+        android:text="No. Telepon"
+        android:textColor="@color/blue_deep"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"/>
+    <EditText
+        android:id="@+id/editTextTelepon"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_et_profile"
+        android:inputType="phone" />
+
+    <!-- Domisili -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_regular"
+        android:text="Domisili"
+        android:textColor="@color/blue_deep"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"/>
+    <EditText
+        android:id="@+id/editTextDomisili"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_et_profile" />
+
+    <!-- Kode Kapal -->
+    <TextView
+        android:id="@+id/textViewKodeKapal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_regular"
+        android:text="Kode Kapal"
+        android:textColor="@color/blue_deep"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"/>
+    <EditText
+        android:id="@+id/editTextKodeKapal"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_et_profile" />
+
+    <!-- Tombol Simpan -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/auth_button"
+        android:fontFamily="@font/inter_medium"
+        android:text="Simpan"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>
